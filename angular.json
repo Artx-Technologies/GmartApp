@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GmartApp"
+    }
+  },
+  "defaultProject": "GmartApp",
+  "cli": {
+    "analytics": false
+  }
 }
