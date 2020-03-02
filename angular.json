@@ -28,7 +28,11 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+=======
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+>>>>>>> 39655103c6cd84ee7b7b6afeb458889172c9e61d
               "src/styles.scss"
             ],
             "scripts": []
@@ -94,7 +98,11 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+=======
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+>>>>>>> 39655103c6cd84ee7b7b6afeb458889172c9e61d
               "src/styles.scss"
             ],
             "scripts": []
