@@ -10,6 +10,7 @@ import { LandingImageComponentComponent } from './landing-image-component/landin
 import { ContentSectionComponentComponent } from './content-section-component/content-section-component.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
