@@ -12,7 +12,10 @@ import { HeaderComponentComponent } from './header-component/header-component.co
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 97a47e991f0097d2573e712cdbe9bdc6f3e8110c
 import {MatCheckboxModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material';
 import {MatInputModule} from '@angular/material/input';
@@ -44,7 +47,10 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
+<<<<<<< HEAD
 >>>>>>> 39655103c6cd84ee7b7b6afeb458889172c9e61d
+=======
+>>>>>>> 97a47e991f0097d2573e712cdbe9bdc6f3e8110c
 
 @NgModule({
   declarations: [
@@ -61,8 +67,11 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     BrowserModule,
     AppRoutingModule,
 <<<<<<< HEAD
+<<<<<<< HEAD
     BrowserAnimationsModule
 =======
+=======
+>>>>>>> 97a47e991f0097d2573e712cdbe9bdc6f3e8110c
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
@@ -95,7 +104,10 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule
+<<<<<<< HEAD
 >>>>>>> 39655103c6cd84ee7b7b6afeb458889172c9e61d
+=======
+>>>>>>> 97a47e991f0097d2573e712cdbe9bdc6f3e8110c
   ],
   providers: [],
   bootstrap: [AppComponent]
