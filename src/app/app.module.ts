@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { ProductsComponentComponent } from './products-component/products-component.component';
@@ -59,6 +61,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule, ReactiveFormsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
