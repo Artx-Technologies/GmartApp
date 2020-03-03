@@ -1,6 +1,5 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { CommonModule } from "@angular/common";
 import { ContactusComponentComponent } from "./contactus-component/contactus-component.component";
 
 const routes: Routes = [
