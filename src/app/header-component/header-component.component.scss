@@ -1,17 +1,25 @@
 .at_rightContentNAv{
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-top: 21px;
   padding-left: 5px;
   a{
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 27px;
     color: #28853C;
-  }
+    }
+    hr{
+      margin-top: 1px;
+      border: 2px solid rgba(10, 146, 64, 0.2);
+  filter: blur(4px);
+  width: 70px;
+    }
 }
 mat-toolbar{
   display: flex;
@@ -35,3 +43,7 @@ mat-toolbar{
     background-clip: text;
   }
 }
+
+
+
+

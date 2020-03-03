@@ -54,3 +54,7 @@ mat-toolbar {
   justify-content: space-between;
   background-color: white;
 }
+
+fa-icon {
+  padding-right: 10px;
+}
