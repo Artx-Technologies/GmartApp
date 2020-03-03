@@ -1,0 +1,53 @@
+.at_Footer{
+  margin-top:80px;
+  bottom: 0;
+  display: flex;
+  max-height: 600px;
+  flex-direction: row;
+  justify-content: space-between;
+  ul, span, p, a{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.05em;
+color: #555555;
+  }
+  ul{
+    list-style:none;
+    li{
+      margin-bottom: 5px;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+
+.at_Col1Content{
+  margin-left:10px;
+  p{
+
+    max-width: 10px;
+  }
+}
+.at_Col3Content{
+  margin-right: 95px;
+
+}
+}
+.at_Containerbd{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+mat-toolbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+fa-icon{
+  padding-right: 10px;
+}
