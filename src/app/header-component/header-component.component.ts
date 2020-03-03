@@ -16,14 +16,7 @@ let obj = {
 export class HeaderComponentComponent implements OnInit {
   faCoffee = faCoffee;
   constructor(private router: Router) {}
-
-  getErrorPassword() {
-    return this.formGroup.get("password").hasError("required")
-      ? "Field is required (at least eight characters, one uppercase letter and one number)"
-      : this.formGroup.get("password").hasError("requirements")
-      ? "Password needs to be at least eight characters, one uppercase letter and one number"
-      : "";
-  }
+  ngOnInit() {}
   goProducts() {
     this.router.navigate(["/products"]);
   }
