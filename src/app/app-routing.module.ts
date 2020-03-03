@@ -5,7 +5,7 @@ import { ContactusComponentComponent } from "./contactus-component/contactus-com
 
 const routes: Routes = [
   { path: "products", component: ProductsComponentComponent },
-  { path: "contact", component: ContactusComponentComponent }
+  { path: "contactus", component: ContactusComponentComponent }
 ];
 
 @NgModule({

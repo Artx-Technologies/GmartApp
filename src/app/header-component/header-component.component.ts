@@ -20,4 +20,7 @@ export class HeaderComponentComponent implements OnInit {
   goProducts() {
     this.router.navigate(["/products"]);
   }
+  goContacts() {
+    this.router.navigate(["/contactus"]);
+  }
 }
