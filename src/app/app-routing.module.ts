@@ -1,11 +1,18 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { CommonModule } from "@angular/common";
+import { ContactusComponentComponent } from "./contactus-component/contactus-component.component";
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: "contactus",
+    component: ContactusComponentComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+export const routingcomponents = [ContactusComponentComponent];
