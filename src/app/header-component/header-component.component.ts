@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header-component',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-component.component.scss']
 })
 export class HeaderComponentComponent implements OnInit {
-
+  faCoffee = faCoffee;
   constructor() { }
 
   ngOnInit(): void {
