@@ -17,6 +17,11 @@ export class HeaderComponentComponent implements OnInit {
   faCoffee = faCoffee;
   constructor(private router: Router) {}
   ngOnInit() {}
+
+  goHome(){
+    this.router.navigate(["/home"]);
+  }
+
   goProducts() {
     this.router.navigate(["/products"]);
   }
