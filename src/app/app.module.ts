@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { ProductsComponentComponent } from './products-component/products-component.component';
 import { ContactusComponentComponent } from './contactus-component/contactus-component.component';
@@ -15,7 +15,7 @@ import { FooterComponentComponent } from './footer-component/footer-component.co
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+
     HomeComponentComponent,
     ProductsComponentComponent,
     ContactusComponentComponent,
