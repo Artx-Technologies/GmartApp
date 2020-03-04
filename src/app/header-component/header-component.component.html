@@ -1,1 +1,15 @@
-<p>header-component works!</p>
+<mat-toolbar>
+  <div class="at_LeftContentNav">
+    <fa-icon [icon]="faCoffee"></fa-icon>
+    <!-- <img src="../assets/facebook.png" alt="Logo"/> -->
+    <a href="#" class="at_CmpName">G-Mart</a>
+  </div>
+  <div class="at_rightContentNAv">
+
+    <a href="#">Home
+      <hr></a>
+
+    <a (click)=goProducts()>Products</a>
+    <a (click)=goContacts()>Contact</a>
+  </div>
+</mat-toolbar>
