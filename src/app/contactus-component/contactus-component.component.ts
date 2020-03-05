@@ -1,23 +1,18 @@
-import { Component, OnInit, Input, Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-@Injectable({
-  providedIn: 'root'
-})
+import { Component, OnInit } from "@angular/core";
+import { FormGroup } from "@angular/forms";
+
 @Component({
-  selector: 'app-contactus-component',
-  templateUrl: './contactus-component.component.html',
-  styleUrls: ['./contactus-component.component.scss']
+  selector: "app-contactus-component",
+  templateUrl: "./contactus-component.component.html",
+  styleUrls: ["./contactus-component.component.scss"]
 })
 export class ContactusComponentComponent implements OnInit {
-  currentPath: BehaviorSubject<String>;
-  HomeClassH = false;
-  ProductClassH = false;
-  ContactClassH = true;
-  constructor() {
-    this.currentPath = new BehaviorSubject("Contact");
-   }
+  formGroup: FormGroup;
+  titleAlert: string = "This Filed Is Reqired";
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit() {}
+
+  getErrorEmail() {}
 }
