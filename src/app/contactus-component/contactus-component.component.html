@@ -1,5 +1,5 @@
 <div class="mainbody">
-  <div class="content">
+  <section class="wrapper">
     <p>Get in Touch with us</p>
     <span>
       We are located at the heart of the <br />
@@ -9,6 +9,34 @@
       wanna place any orders or any other<br />
       enquires
     </span>
+  </section>
+
+  <div class="contact-us">
+    <section class="head">
+      <h2>Contact Us</h2>
+    </section>
+    <br /><br />
+    <section class="contact-form">
+      <form [formGroup]="formGroup" class="form">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput required />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Phone</mat-label>
+          <input matInput required />
+        </mat-form-field>
+        <div>
+          <p required>Enquiery</p>
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="Placeholder" />
+          </mat-form-field>
+        </div>
+      </form>
+    </section>
   </div>
-  <section class="contact-us"></section>
 </div>
