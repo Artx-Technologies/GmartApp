@@ -94,7 +94,8 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
