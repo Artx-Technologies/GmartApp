@@ -1,5 +1,6 @@
-import { Component, OnInit } from "@angular/core";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { Component, OnInit} from "@angular/core";
+import { faCoffee,faBars } from "@fortawesome/free-solid-svg-icons";
+import {faGoodreadsG} from "@fortawesome/free-brands-svg-icons";
 import { Router } from "@angular/router";
 
 let obj = {
@@ -15,17 +16,35 @@ let obj = {
 })
 export class HeaderComponentComponent implements OnInit {
   faCoffee = faCoffee;
+  currentPath:string;
+  faBars = faBars;
+  faIc=faGoodreadsG;
+  HomeClassH:boolean= false;
+  ProductClassH : boolean = false;
+  ContactClassH : boolean = false;
   constructor(private router: Router) {}
-  ngOnInit() {}
+  ngOnInit() {
+
+  }
 
   goHome(){
     this.router.navigate(["/home"]);
+    this.HomeClassH = true;
+    this.ProductClassH = false;
+    this.ContactClassH = false;
+    // console.log(hero);
   }
 
   goProducts() {
     this.router.navigate(["/products"]);
+    this.HomeClassH = false;
+    this.ProductClassH = true;
+    this.ContactClassH = false;
   }
   goContacts() {
     this.router.navigate(["/contactus"]);
+    this.HomeClassH = false;
+    this.ProductClassH = false;
+    this.ContactClassH = true;
   }
 }
