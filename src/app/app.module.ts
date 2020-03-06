@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule, routingcomponents } from "./app-routing.module";
@@ -43,11 +44,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
-<<<<<<< HEAD
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-=======
 import { from } from "rxjs";
->>>>>>> origin/Seetha
 
 @NgModule({
   declarations: [
