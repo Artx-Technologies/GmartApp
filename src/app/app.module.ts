@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule, routingcomponents } from "./app-routing.module";
@@ -93,7 +94,8 @@ import { from } from "rxjs";
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
