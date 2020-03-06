@@ -1,6 +1,9 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+<<<<<<< HEAD
 import { ProductsComponentComponent } from "./products-component/products-component.component";
+=======
+>>>>>>> origin/Seetha
 import { ContactusComponentComponent } from "./contactus-component/contactus-component.component";
 import { HomeComponentComponent } from './home-component/home-component.component';
 
