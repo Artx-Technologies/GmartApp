@@ -1,1 +1,12 @@
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
+.carousel-inner{
+  img{
+    height: 400px;
+  }
+}
+.carousel-caption{
+  top: 0;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
