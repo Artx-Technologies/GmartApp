@@ -5,11 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './landing-image-component.component.html',
   styleUrls: ['./landing-image-component.component.scss']
 })
-export class LandingImageComponentComponent implements OnInit {
 
+export class LandingImageComponentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
-
+  do($event){
+    $event.preventDefault();
+    $event.stopPropagation();
+  }
+ 
 }
