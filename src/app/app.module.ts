@@ -44,7 +44,6 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
-import {AgmCoreModule} from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -95,11 +94,7 @@ import {AgmCoreModule} from '@agm/core';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    FontAwesomeModule,
-    AgmCoreModule.forRoot({
-      apiKey: ''
-
-    })
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

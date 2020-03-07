@@ -37,14 +37,8 @@
         </div>
       </form>
       <section class="btn">
-        <button mat-raised-button color="primary">submit</button>
+        <button mat-raised-button color="primary">Submit</button>
       </section>
     </section>
   </div>
-  <div class="border">
-    <agm-map [latitude]="lat" [longitude]="lng" (mapClick)='getLocation($event)'>
-      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-    </agm-map>
-  </div>
 </div>
-
