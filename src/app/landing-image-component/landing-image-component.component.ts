@@ -12,7 +12,7 @@ export class LandingImageComponentComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  do($event){
+  stopDefaults($event){
     $event.preventDefault();
     $event.stopPropagation();
   }
