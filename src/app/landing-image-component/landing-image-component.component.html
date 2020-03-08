@@ -1,4 +1,39 @@
-<p>landing-image-component works!</p>
-<img src="../../assets/Images/Rectangle 2.png" alt="landing image">
-<p class="content">We offer the best quality products and competitive pricing</p>
+<div id="carouselExampleControls" class="carousel slide" data-interval="false"  data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://freakyjolly.com/demo/jquery/PreloadJS/images/1.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Hello</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://freakyjolly.com/demo/jquery/PreloadJS/images/2.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Hello1</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://freakyjolly.com/demo/jquery/PreloadJS/images/3.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Hello2</h1>
+        </div>
+      </div>
+    </div>
+    <a ng-click='stopDefaults($event)  $event.preventDefault()' class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle r="43" transform="matrix(-1 0 0 1 43 43)" fill="#555555" fill-opacity="0.5"/>
+            <path d="M13 43L58 64.6506V21.3494L13 43Z" fill="#C4C4C4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+            
+    </a>
+    <a ng-click="stopDefaults($event) $event.preventDefault()" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="43" cy="43" r="43" fill="#555555" fill-opacity="0.5"/>
+            <path d="M73 43L28 64.6506V21.3494L73 43Z" fill="#C4C4C4"/>
+            </svg>
+            
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
