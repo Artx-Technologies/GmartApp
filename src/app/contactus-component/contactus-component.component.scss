@@ -6,13 +6,10 @@
   justify-content: space-around;
   align-items: center;
   .wrapper {
-    line-height: 30px;
-    padding-bottom: 170px;
     .head {
       color: white;
       font-family: sans-serif;
       font-size: 38px;
-      margin: 0;
     }
     .body {
       font-family: sans-serif;
@@ -20,43 +17,31 @@
     }
   }
   .contact-us {
-    border-radius: 12px;
-    width: 321px;
-    background-color: white;
-    height: 482px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 23px;
-
+    border-radius: 17px;
+    width: 23%;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 88%;
     .header {
-      padding-right: 135px;
+      padding: 0px 38px;
       .head1 {
-        padding: 0px;
-        margin: 0px;
+        padding-top: 20px;
       }
     }
+
     .contact-form {
       .form {
         display: flex;
         flex-direction: column;
-        padding-bottom: 75px;
-
-        .Enq {
-          opacity: 55%;
+        justify-content: center;
+        align-items: center;
+        .footer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
-        .box {
-          border-radius: 12px;
-          border: 1px solid rgb(177, 177, 177);
-          height: 95px;
-          width: 253px;
-        }
-      }
-      .btn {
-        left: 93px;
-        position: relative;
-        bottom: 66px;
       }
     }
   }
@@ -68,8 +53,8 @@
   .mainbody {
     width: 147%;
     .wrapper {
-      line-height: 20px;
       padding-bottom: 320px;
+      padding-left: 36px;
       .head {
         font-size: 28px;
       }
@@ -77,10 +62,13 @@
         font-size: 18px;
       }
     }
-  }
-  .contact-us {
-    top: 35%;
-    position: relative;
-    left: 9%;
+
+    .contact-us {
+      width: 53%;
+      height: 85%;
+      top: 10%;
+      position: relative;
+      left: 9%;
+    }
   }
 }
