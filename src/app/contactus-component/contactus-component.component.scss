@@ -21,15 +21,17 @@
   }
   .contact-us {
     border-radius: 12px;
-    width: 265px;
+    width: 321px;
     background-color: white;
-    height: 495px;
+    height: 482px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 28px;
+    align-items: center;
+    padding-top: 23px;
+
     .header {
+      padding-right: 135px;
       .head1 {
         padding: 0px;
         margin: 0px;
@@ -66,26 +68,19 @@
   .mainbody {
     width: 147%;
     .wrapper {
+      line-height: 20px;
       padding-bottom: 320px;
       .head {
         font-size: 28px;
       }
       .body {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }
   .contact-us {
     top: 35%;
     position: relative;
-    left: 0%;
+    left: 9%;
   }
-}
-.border{
-  border-style: groove;
-  width: 400px;
-}
-agm-map{
-  height: 400px;
-  width: 400px;
 }
