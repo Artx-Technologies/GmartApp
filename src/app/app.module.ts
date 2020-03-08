@@ -1,10 +1,11 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
-import { AppRoutingModule, routingcomponents } from "./app-routing.module";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-
+import { AppRoutingModule, routingcomponents } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+
 import { HomeComponentComponent } from "./home-component/home-component.component";
 import { ProductsComponentComponent } from "./products-component/products-component.component";
 import { ContactusComponentComponent } from "./contactus-component/contactus-component.component";
@@ -43,7 +44,6 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [

@@ -1,15 +1,14 @@
 <mat-toolbar>
   <div class="at_LeftContentNav">
-    <fa-icon [icon]="faCoffee"></fa-icon>
+    <fa-icon [icon]="faBars"></fa-icon>
+    <fa-icon [icon]="faIc"></fa-icon>
     <!-- <img src="../assets/facebook.png" alt="Logo"/> -->
     <a href="#" class="at_CmpName">G-Mart</a>
   </div>
   <div class="at_rightContentNAv">
-
-    <a href="#">Home
-      <hr></a>
-
-    <a (click)=goProducts()>Products</a>
-    <a (click)=goContacts()>Contact</a>
+<!-- Helllo -->
+    <a (click)="goHome()"  >Home<hr [ngClass]="HomeClassH ?'':'at_hide'"></a>
+    <a (click)="goProducts()"  >Products<hr [ngClass]="ProductClassH ?'':'at_hide'"></a>
+    <a (click)="goContacts()">Contact<hr [ngClass]="ContactClassH ?'':'at_hide'"></a>
   </div>
 </mat-toolbar>
