@@ -15,6 +15,8 @@
     margin-top: 10mm;
   }
   .contenttext {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     margin-right: 8%;
     .p1 {
@@ -36,8 +38,8 @@
       font-weight: bold;
       font-size: 60px;
       line-height: 70px;
-      margin-bottom: -5%;
-      margin-top: -17mm;
+      // margin-bottom: -5%;
+      // margin-top: -17mm;
 
       color: #28922c;
     }
@@ -72,7 +74,7 @@
     margin-top: 10%;
     border-radius: 50%;
   }
-  h5 {
+  p {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -80,7 +82,7 @@
     line-height: 56px;
     text-align: initial;
     margin-left: 15%;
-    margin-top: 3%;
+    margin-top: 5%;
 
     color: #ffffff;
   }
@@ -92,7 +94,7 @@
     line-height: 37px;
     text-align: initial;
     margin-left: 15%;
-    margin-top: -13%;
+    // margin-top: -13%;
 
     color: #ffffff;
   }

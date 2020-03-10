@@ -14,7 +14,7 @@ let obj = {
   templateUrl: "./header-component.component.html",
   styleUrls: ["./header-component.component.scss"]
 })
-export class HeaderComponentComponent implements OnInit {
+export class HeaderComponent implements OnInit {
   faCoffee = faCoffee;
   currentPath:string;
   faBars = faBars;
