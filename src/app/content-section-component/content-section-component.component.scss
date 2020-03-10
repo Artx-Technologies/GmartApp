@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Romanesco&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+
+.content1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 40%;
+  .image {
+    // background-image: url(../assets/image.png);
+    width: 50%;
+    display: block;
+    margin-left: 8%;
+    margin-right: auto;
+    margin-top: 10mm;
+  }
+  .contenttext {
+    width: 50%;
+    margin-right: 8%;
+    .p1 {
+      font-family: "Romanesco", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 69px;
+      /* identical to box height */
+
+      letter-spacing: 0.06em;
+      margin-top: 25%;
+
+      color: #28853c;
+    }
+    .p2 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 70px;
+      margin-bottom: -5%;
+      margin-top: -17mm;
+
+      color: #28922c;
+    }
+    .p3 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: initial;
+
+      color: #000000;
+    }
+  }
+}
+.content2 {
+  display: flex;
+  flex-direction: row;
+  // justify-items: center;
+  // justify-content: space-evenly;
+  // flex-wrap: wrap;
+  // justify-content: space-around;
+  height: 60%;
+  // background-image: url(../assets/backgroundimage.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/backgroundimage.png);
+
+  img {
+    display: block;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 50%;
+  }
+  h5 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: initial;
+    margin-left: 15%;
+    margin-top: 3%;
+
+    color: #ffffff;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: initial;
+    margin-left: 15%;
+    margin-top: -13%;
+
+    color: #ffffff;
+  }
+}
