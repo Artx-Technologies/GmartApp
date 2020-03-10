@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  height: 40%;
+  // height: 40%;
   .image {
     // background-image: url(../assets/image.png);
     width: 50%;
@@ -63,7 +63,11 @@
   height: 60%;
   // background-image: url(../assets/backgroundimage.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+<<<<<<< HEAD
     url(../../assets/backgroundimage.png);
+=======
+    url("../../assets/backgroundimage.png");
+>>>>>>> da8f4da3d8bfa20fbbdb36d95bde0a90e3355169
 
   img {
     display: block;
