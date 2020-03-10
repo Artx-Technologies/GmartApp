@@ -1,7 +1,8 @@
 <div class="mainbody">
-  <div class="content">
-    <p>Get in Touch with us</p>
-    <span>
+  <div class="wrapper">
+    <p class="head">Get in Touch with us</p>
+
+    <span class="body">
       We are located at the heart of the <br />
       city and near to all the<br />
       transportation.Feel free to reach out<br />
@@ -10,6 +11,33 @@
       enquires
     </span>
   </div>
-  <section class="contact-us"></section>
+
+  <div class="contact-us">
+    <section class="header">
+      <h2 class="head1">Contact Us</h2>
+    </section>
+
+    <section class="contact-form">
+      <form class="form">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput required />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Phone</mat-label>
+          <input matInput required />
+        </mat-form-field>
+        <div class="footer">
+          <p class="Enq" required>Enquiery</p>
+          <input type="text" class="box" />
+          <br />
+          <button mat-raised-button color="primary">Submit</button>
+        </div>
+      </form>
+    </section>
+  </div>
 </div>
-<button>send</button>

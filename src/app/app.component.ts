@@ -10,4 +10,5 @@ export class AppComponent {
   title = "GmartApp";
   faCoffee = faCoffee;
   fb = faFacebookF;
+
 }
