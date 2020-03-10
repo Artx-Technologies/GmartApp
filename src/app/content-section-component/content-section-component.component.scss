@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  height: 40%;
+  // height: 40%;
   .image {
     // background-image: url(../assets/image.png);
     width: 50%;
@@ -15,6 +15,8 @@
     margin-top: 10mm;
   }
   .contenttext {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     margin-right: 8%;
     .p1 {
@@ -92,7 +94,7 @@
     line-height: 37px;
     text-align: initial;
     margin-left: 15%;
-    margin-top: -13%;
+    // margin-top: -13%;
 
     color: #ffffff;
   }
