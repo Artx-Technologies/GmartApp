@@ -53,7 +53,7 @@
 }
 
 .mapborder {
-  padding-left: 271px;
+  padding-left: 138px;
   position: absolute;
   top: 432px;
   .map {
@@ -87,6 +87,8 @@
     }
   }
 }
-.mapborder {
-  padding-left: 22px;
+@media only screen and (max-width: 400px) {
+  .mapborder {
+    padding-left: 22px;
+  }
 }
