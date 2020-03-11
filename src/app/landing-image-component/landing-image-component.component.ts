@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-image-component.component.scss']
 })
 
-export class LandingImageComponentComponent implements OnInit {
+export class LandingImageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
   stopDefaults($event){
     $event.preventDefault();
     $event.stopPropagation();
   }
- 
+
 }

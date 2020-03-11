@@ -1,3 +1,4 @@
+
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -6,13 +7,13 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule, routingcomponents } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
-import { HomeComponentComponent } from "./home-component/home-component.component";
-import { ProductsComponentComponent } from "./products-component/products-component.component";
-import { ContactusComponentComponent } from "./contactus-component/contactus-component.component";
-import { LandingImageComponentComponent } from "./landing-image-component/landing-image-component.component";
-import { ContentSectionComponentComponent } from "./content-section-component/content-section-component.component";
-import { HeaderComponentComponent } from "./header-component/header-component.component";
-import { FooterComponentComponent } from "./footer-component/footer-component.component";
+import { HomeComponent } from "./home-component/home-component.component";
+import { ProductsComponent } from "./products-component/products-component.component";
+import { ContactusComponent } from "./contactus-component/contactus-component.component";
+import { LandingImageComponent } from "./landing-image-component/landing-image-component.component";
+import { ContentSectionComponent } from "./content-section-component/content-section-component.component";
+import { HeaderComponent } from "./header-component/header-component.component";
+import { FooterComponent } from "./footer-component/footer-component.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatCheckboxModule } from "@angular/material";
 import { MatButtonModule } from "@angular/material";
@@ -44,17 +45,18 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
+import {AgmCoreModule} from '@agm/core'
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponentComponent,
-    ProductsComponentComponent,
-    ContactusComponentComponent,
-    LandingImageComponentComponent,
-    ContentSectionComponentComponent,
-    HeaderComponentComponent,
-    FooterComponentComponent,
+    HomeComponent,
+    ProductsComponent,
+    ContactusComponent,
+    LandingImageComponent,
+    ContentSectionComponent,
+    HeaderComponent,
+    FooterComponent,
     routingcomponents
   ],
   imports: [
@@ -94,7 +96,10 @@ import { MatPaginatorModule } from "@angular/material/paginator";
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: ""
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

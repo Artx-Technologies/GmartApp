@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-products-component',
@@ -7,9 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./products-component.component.scss']
 })
 export class ProductsComponentComponent implements OnInit {
+  rightArrowFilled =faCaretRight;
+  whichoneisClicked;
   constructor(private router: Router) { }
   ngOnInit(): void {
-  
+    this.whichoneisClicked = 'veg';
   }
 
 }

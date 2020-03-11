@@ -1,13 +1,14 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { ContactusComponentComponent } from "./contactus-component/contactus-component.component";
-import { HomeComponentComponent } from "./home-component/home-component.component";
+import { ContactusComponent } from "./contactus-component/contactus-component.component";
+import { HomeComponent } from "./home-component/home-component.component";
 import { ProductsComponentComponent } from "./products-component/products-component.component";
 
 const routes: Routes = [
-  { path: "home", component: HomeComponentComponent },
+  { path: "", component: HomeComponent },
+  { path: "home", component: HomeComponent },
   { path: "products", component: ProductsComponentComponent },
-  { path: "contactus", component: ContactusComponentComponent }
+  { path: "contactus", component: ContactusComponent }
 ];
 
 @NgModule({
@@ -15,4 +16,8 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
-export const routingcomponents = [ContactusComponentComponent];
+export const routingcomponents = [
+  ContactusComponent,
+  HomeComponent,
+  ProductsComponentComponent
+];

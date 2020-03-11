@@ -47,6 +47,15 @@
   }
 }
 
+.mapborder{
+  display: inline-block;
+  border-style: groove;
+  width: 400px;
+}
+agm-map{
+  height: 400px;
+}
+
 //Media Quires
 
 @media only screen and (max-width: 400px) {
