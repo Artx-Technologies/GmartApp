@@ -1,4 +1,3 @@
-
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -8,7 +7,7 @@ import { AppRoutingModule, routingcomponents } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import { HomeComponent } from "./home-component/home-component.component";
-import { ProductsComponent } from "./products-component/products-component.component";
+import { ProductsComponentComponent } from "./products-component/products-component.component";
 import { ContactusComponent } from "./contactus-component/contactus-component.component";
 import { LandingImageComponent } from "./landing-image-component/landing-image-component.component";
 import { ContentSectionComponent } from "./content-section-component/content-section-component.component";
@@ -45,13 +44,13 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
-import {AgmCoreModule} from '@agm/core'
+import { AgmCoreModule } from "@agm/core";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductsComponent,
+    ProductsComponentComponent,
     ContactusComponent,
     LandingImageComponent,
     ContentSectionComponent,
