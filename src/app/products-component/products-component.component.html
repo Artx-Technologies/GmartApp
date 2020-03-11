@@ -1,2 +1,25 @@
-<p>products-component works!</p>
+<div class="at_imgProBanner">
+  <h1>Products</h1>
+  <p>Browse our products from wide range of varieties in different categories. Compare the pricing of each product from
+    your list.</p>
+</div>
+<div class="at_Content_main">
+  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <a (click)="whichoneisClicked = 'veg'" class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-Vegetables" role="tab"
+      aria-controls="v-pills-home" aria-selected="true">Vegetables <fa-icon [ngClass]="whichoneisClicked === 'veg' ? 'at_ArroeIconselected' : ''" style="margin-left: 5px; color: #625C5C" [icon]="rightArrowFilled"></fa-icon> </a>
+    <a (click)="whichoneisClicked = 'fru'" class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-Fruits" role="tab"
+      aria-controls="v-pills-profile" aria-selected="false">Fruits<fa-icon [ngClass]="whichoneisClicked === 'fru' ? 'at_ArroeIconselected' : ''"  style="margin-left: 5px; color: #625C5C" [icon]="rightArrowFilled"></fa-icon></a>
+    <a (click)="whichoneisClicked = 'ric'" class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-Rice" role="tab"
+      aria-controls="v-pills-messages" aria-selected="false">Rice<fa-icon [ngClass]="whichoneisClicked === 'ric' ? 'at_ArroeIconselected' : ''"   style="margin-left: 5px; color: #625C5C" [icon]="rightArrowFilled"></fa-icon></a>
+    <a (click)="whichoneisClicked = 'bread'" class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-Bread" role="tab"
+      aria-controls="v-pills-settings" aria-selected="false">Bread<fa-icon [ngClass]="whichoneisClicked === 'bread' ? 'at_ArroeIconselected' : ''" style="margin-left: 5px; color: #625C5C" [icon]="rightArrowFilled"></fa-icon></a>
+  </div>
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-Vegetables" role="tabpanel" aria-labelledby="v-pills-home-tab">Vegetables
+    </div>
+    <div class="tab-pane fade" id="v-pills-Fruits" role="tabpanel" aria-labelledby="v-pills-profile-tab">Fruits</div>
+    <div class="tab-pane fade" id="v-pills-Rice" role="tabpanel" aria-labelledby="v-pills-messages-tab">Rice</div>
+    <div class="tab-pane fade" id="v-pills-Bread" role="tabpanel" aria-labelledby="v-pills-settings-tab">Bread</div>
+  </div>
+</div>
 <router-outlet></router-outlet>

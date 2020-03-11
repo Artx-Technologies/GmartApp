@@ -1,0 +1,79 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.at_imgProBanner {
+  background-image: url("../../assets/Images/bgimgpro.png");
+  background-repeat: no-repeat;
+  height: 321px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 912px;
+    height: 92px;
+  }
+
+  p {
+    width: 912px;
+    height: 92px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FFFFFF;
+
+
+  }
+}
+
+.at_Content_main {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  .tab-content{
+    margin-left: 30px;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #000000 !important;
+	background-color: #AEDFA6 !important;
+}
+.nav-link{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+}
+a.active{
+   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+   
+}
+a{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 33px;
+    color: #625C5C;
+}
+fa-icon{
+    align-self: flex-end;
+  
+}
+}
+.at_ArroeIconselected{
+    color: rgba(40, 133, 60, 0.8) !important;
+}
