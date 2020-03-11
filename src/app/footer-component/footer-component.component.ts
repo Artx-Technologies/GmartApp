@@ -7,7 +7,7 @@ import{faMapMarkerAlt, faPhone,faEnvelope} from '@fortawesome/free-solid-svg-ico
   templateUrl: './footer-component.component.html',
   styleUrls: ['./footer-component.component.scss']
 })
-export class FooterComponentComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   fb = faFacebookF;
   tw= faTwitter;

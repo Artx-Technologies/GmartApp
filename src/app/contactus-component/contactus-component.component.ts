@@ -6,7 +6,7 @@ import { FormGroup } from "@angular/forms";
   templateUrl: "./contactus-component.component.html",
   styleUrls: ["./contactus-component.component.scss"]
 })
-export class ContactusComponentComponent implements OnInit {
+export class ContactusComponent implements OnInit {
   formGroup: FormGroup;
   titleAlert: string = "This Filed Is Reqired";
   lat: number= 43.65283632129762;
