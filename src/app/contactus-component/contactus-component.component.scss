@@ -6,6 +6,7 @@
   justify-content: space-around;
   align-items: center;
   .wrapper {
+    padding-bottom: 190px;
     .head {
       color: white;
       font-family: sans-serif;
@@ -41,19 +42,24 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
+          .box {
+            width: 200px;
+            height: 100px;
+          }
         }
       }
     }
   }
 }
 
-.mapborder{
-  display: inline-block;
-  border-style: groove;
-  width: 400px;
-}
-agm-map{
-  height: 400px;
+.mapborder {
+  padding-left: 138px;
+  position: absolute;
+  top: 432px;
+  .map {
+    height: 280px;
+    width: 280px;
+  }
 }
 
 //Media Quires
@@ -79,5 +85,10 @@ agm-map{
       position: relative;
       left: 9%;
     }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .mapborder {
+    padding-left: 22px;
   }
 }
