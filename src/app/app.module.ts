@@ -5,7 +5,6 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule, routingcomponents } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-
 import { HomeComponent } from "./home-component/home-component.component";
 import { ProductsComponentComponent } from "./products-component/products-component.component";
 import { ContactusComponent } from "./contactus-component/contactus-component.component";
