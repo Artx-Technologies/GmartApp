@@ -7,7 +7,7 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
   templateUrl: './products-component.component.html',
   styleUrls: ['./products-component.component.scss']
 })
-export class ProductsComponentComponent implements OnInit {
+export class ProductsComponent implements OnInit {
   rightArrowFilled =faCaretRight;
   whichoneisClicked;
   constructor(private router: Router) { }
