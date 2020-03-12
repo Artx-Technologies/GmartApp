@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-products-component',
@@ -13,6 +14,11 @@ export class ProductsComponent implements OnInit {
   constructor(private router: Router) { }
   ngOnInit(): void {
     this.whichoneisClicked = 'veg';
+  }
+
+    gotocart(pagename: string){
+    this.router.navigate(['CartComponent']);
+
   }
 
 }

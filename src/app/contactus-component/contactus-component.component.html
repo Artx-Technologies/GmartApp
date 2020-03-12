@@ -33,7 +33,7 @@
         </mat-form-field>
         <div class="footer">
           <p class="Enq" required>Enquiery</p>
-          <input type="text" class="box" />
+          <textarea class="box"></textarea>
           <br />
           <button mat-raised-button color="primary">Submit</button>
         </div>
@@ -43,7 +43,7 @@
 </div>
 
 <div class="mapborder">
-  <agm-map [latitude]= "lat" [longitude]= "lng">
-    <agm-marker [latitude]= "lat" [longitude]= "lng"></agm-marker>
+  <agm-map class="map" [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
   </agm-map>
 </div>

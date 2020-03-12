@@ -9,8 +9,8 @@ import { FormGroup } from "@angular/forms";
 export class ContactusComponent implements OnInit {
   formGroup: FormGroup;
   titleAlert: string = "This Filed Is Reqired";
-  lat: number= 43.65283632129762;
-  lng: number= -79.38258099690641;
+  lat: number = 43.65283632129762;
+  lng: number = -79.38258099690641;
 
   constructor() {}
 
@@ -18,9 +18,9 @@ export class ContactusComponent implements OnInit {
 
   getErrorEmail() {}
 
-  getLocation(event){
+  getLocation(event) {
     console.log(event);
-    this.lat= event.coords.lat;
-    this.lng= event.coords.lng;
+    this.lat = event.coords.lat;
+    this.lng = event.coords.lng;
   }
 }
