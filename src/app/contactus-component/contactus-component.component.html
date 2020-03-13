@@ -30,9 +30,12 @@
             {{ titleAlert }}
           </mat-error>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" class="form-element">
           <mat-label>Email</mat-label>
-          <input matInput />
+          <input matInput formControlName="mail" />
+          <mat-error *ngIf="!formGroup.controls['mail'].valid">
+            {{ getErrorEmail() }}
+          </mat-error>
         </mat-form-field>
         <mat-form-field appearance="fill">
           <mat-label>Phone</mat-label>

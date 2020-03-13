@@ -24,15 +24,23 @@ export class ContactusComponent implements OnInit {
     this.createForm();
   }
   createForm() {
+    let emailregex: RegExp = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
     this.formGroup = this.formBuilder.group({
       name: [null, [Validators.required]],
+      email: [null, [Validators.pattern(emailregex)]],
       Validate: ""
     });
   }
   get name() {
     return this.formGroup.get("name") as FormControl;
   }
-  getErrorEmail() {}
+  getErrorEmail() {
+    this.formGroup.get("email").hasError("pattern")
+      ? "Not a valid email"
+      : this.formGroup.get("email").hasError("already in use")
+      ? "in use"
+      : "";
+  }
 
   onSubmit() {
     console.log(this.formGroup.value);
