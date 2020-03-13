@@ -17,6 +17,7 @@ export class ContactusComponent implements OnInit {
   titleAlert: string = "This Filed Is Reqired";
   lat: number = 43.65283632129762;
   lng: number = -79.38258099690641;
+  post: any;
 
   constructor(private formBuilder: FormBuilder) {}
 
@@ -28,6 +29,18 @@ export class ContactusComponent implements OnInit {
     this.formGroup = this.formBuilder.group({
       name: [null, [Validators.required]],
       email: [null, [Validators.pattern(emailregex)]],
+      phone: [
+        null,
+        [
+          Validators.required,
+          Validators.minLength(10),
+          Validators.maxLength(10)
+        ]
+      ],
+      discription: [
+        null,
+        [Validators.required, Validators.minLength(2), Validators.maxLength(10)]
+      ],
       Validate: ""
     });
   }
@@ -40,6 +53,9 @@ export class ContactusComponent implements OnInit {
       : this.formGroup.get("email").hasError("already in use")
       ? "in use"
       : "";
+  }
+  getErrorPhone() {
+    this.formGroup.get("phone").hasError("numbers") ? "Not a valid number" : "";
   }
 
   onSubmit() {

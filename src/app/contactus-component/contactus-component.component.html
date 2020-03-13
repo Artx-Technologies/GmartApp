@@ -18,36 +18,59 @@
     </section>
 
     <section class="contact-form">
-      <form
-        class="form"
-        [formGroup]="formGroup"
-        (ngSubmit)="onSubmit(formGroup.value)"
-      >
-        <mat-form-field appearance="fill" class="form-element">
-          <mat-label>Name</mat-label>
-          <input matInput required formControlName="name" />
-          <mat-error *ngIf="!name.valid && name.touched">
-            {{ titleAlert }}
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="fill" class="form-element">
-          <mat-label>Email</mat-label>
-          <input matInput formControlName="mail" />
-          <mat-error *ngIf="!formGroup.controls['mail'].valid">
-            {{ getErrorEmail() }}
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-          <mat-label>Phone</mat-label>
-          <input matInput required />
-        </mat-form-field>
-        <div class="footer">
-          <p class="Enq" required>Enquiery</p>
-          <textarea class="box"></textarea>
-          <br />
-          <button mat-raised-button color="primary">Submit</button>
-        </div>
-      </form>
+      <section novaildate>
+        <form
+          class="form"
+          [formGroup]="formGroup"
+          (ngSubmit)="onSubmit(formGroup.value)"
+        >
+          <mat-form-field appearance="fill" class="form-element">
+            <mat-label>Name</mat-label>
+            <input matInput required formControlName="name" />
+            <mat-error *ngIf="!name.valid && name.touched">
+              {{ titleAlert }}
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="form-element">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+            <mat-error *ngIf="!formGroup.controls['email'].valid">
+              {{ getErrorEmail() }}
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="form-element">
+            <mat-label>Phone</mat-label>
+            <input matInput required formControlName="phone" />
+            <mat-error
+              *ngIf="
+                !formGroup.controls['phone'].valid &&
+                formGroup.controls['phone'].touched
+              "
+            >
+              {{ getErrorPhone() }}
+            </mat-error>
+          </mat-form-field>
+
+          <div class="footer">
+            <p class="Enq" required>Enquiery</p>
+            <textarea class="box" matTextareaAutosize matAutosizeMinRows="2">
+              <mat-error *ngIf="!formGroup.controls['description'].valid && formGroup.controls['description'].touched">
+                required field must be 10 charaters
+              </mat-error>
+            </textarea>
+            <br />
+            <button
+              mat-raised-button
+              color="primary"
+              type="submit"
+              class="btn"
+              [disabled]="!formGroup.valid"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
     </section>
   </div>
 </div>
