@@ -40,33 +40,31 @@
           </mat-form-field>
           <mat-form-field appearance="fill" class="form-element">
             <mat-label>Phone</mat-label>
-            <input matInput required formControlName="phone" />
+            <input matInput formControlName="mobileNumber" maxlength="10" />
             <mat-error
-              *ngIf="
-                !formGroup.controls['phone'].valid &&
-                formGroup.controls['phone'].touched
-              "
+              *ngIf="formGroup.get('mobileNumber').hasError('required')"
             >
-              {{ getErrorPhone() }}
+              Please fill out this field.
+            </mat-error>
+            <mat-error
+              *ngIf="formGroup.get('mobileNumber').hasError('pattern')"
+            >
+              It is not a valid mobile number.
             </mat-error>
           </mat-form-field>
 
           <div class="footer">
-            <p class="Enq" required>Enquiery</p>
-            <textarea class="box" matTextareaAutosize matAutosizeMinRows="2">
-              <mat-error *ngIf="!formGroup.controls['description'].valid && formGroup.controls['description'].touched">
-                required field must be 10 charaters
-              </mat-error>
-            </textarea>
-            <br />
+            <mat-label>Enquirey</mat-label>
+            <textarea class="box" required formControlName="enq"> </textarea>
+            <mat-error *ngIf="!enq.valid && enq.touched">
+              {{ titleAlert }}
+            </mat-error>
             <button
               mat-raised-button
               color="primary"
-              type="submit"
-              class="btn"
               [disabled]="!formGroup.valid"
             >
-              Submit
+              submit
             </button>
           </div>
         </form>
@@ -74,6 +72,7 @@
     </section>
   </div>
 </div>
+
 <div>
   <mat-card *ngFor="let item of ex">{{ item | json }}</mat-card>
 </div>

@@ -15,6 +15,7 @@ export class ContactusComponent implements OnInit {
   formGroup: FormGroup;
   ex = [];
   titleAlert: string = "This Filed Is Reqired";
+
   lat: number = 43.65283632129762;
   lng: number = -79.38258099690641;
   post: any;
@@ -27,35 +28,28 @@ export class ContactusComponent implements OnInit {
   createForm() {
     let emailregex: RegExp = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
     this.formGroup = this.formBuilder.group({
-      name: [null, [Validators.required]],
-      email: [null, [Validators.pattern(emailregex)]],
-      phone: [
-        null,
-        [
-          Validators.required,
-          Validators.minLength(10),
-          Validators.maxLength(10)
-        ]
+      name: ["", [Validators.required]],
+      email: ["", [Validators.pattern(emailregex)]],
+      mobileNumber: [
+        "",
+        [Validators.required, Validators.pattern(/^[6-9]\d{9}$/)]
       ],
-      discription: [
-        null,
-        [Validators.required, Validators.minLength(2), Validators.maxLength(10)]
-      ],
+      enq: ["", [Validators.required]],
+
       Validate: ""
     });
   }
   get name() {
     return this.formGroup.get("name") as FormControl;
   }
-  getErrorEmail() {
-    this.formGroup.get("email").hasError("pattern")
-      ? "Not a valid email"
-      : this.formGroup.get("email").hasError("already in use")
-      ? "in use"
-      : "";
+  get mobileNumber() {
+    return this.formGroup.get("phone") as FormControl;
   }
-  getErrorPhone() {
-    this.formGroup.get("phone").hasError("numbers") ? "Not a valid number" : "";
+  get enq() {
+    return this.formGroup.get("enq") as FormControl;
+  }
+  getErrorEmail() {
+    this.formGroup.get("email").hasError("pattern") ? "Not a valid email" : "";
   }
 
   onSubmit() {
