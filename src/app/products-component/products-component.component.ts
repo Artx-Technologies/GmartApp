@@ -8,7 +8,7 @@ import { CartComponent } from '../cart/cart.component';
   templateUrl: './products-component.component.html',
   styleUrls: ['./products-component.component.scss']
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponentComponent implements OnInit {
   rightArrowFilled =faCaretRight;
   whichoneisClicked;
   images = [
