@@ -11,6 +11,33 @@ import { CartComponent } from '../cart/cart.component';
 export class ProductsComponent implements OnInit {
   rightArrowFilled =faCaretRight;
   whichoneisClicked;
+  images = [
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    }];
+
+
   constructor(private router: Router) { }
   ngOnInit(): void {
     this.whichoneisClicked = 'veg';
