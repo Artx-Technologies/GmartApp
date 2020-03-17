@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-products-component',
@@ -10,9 +11,41 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 export class ProductsComponentComponent implements OnInit {
   rightArrowFilled =faCaretRight;
   whichoneisClicked;
+  images = [
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    },
+    {
+      image: "../../assets/carrots.jpg"
+    }];
+
+
   constructor(private router: Router) { }
   ngOnInit(): void {
     this.whichoneisClicked = 'veg';
+  }
+
+    gotocart(pagename: string){
+    this.router.navigate(['CartComponent']);
+
   }
 
 }
