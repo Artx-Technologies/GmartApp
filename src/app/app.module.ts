@@ -45,6 +45,7 @@ import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { AgmCoreModule } from "@agm/core";
 import { CartComponent } from './cart/cart.component';
+import { CarHomeComponent } from './car-home/car-home.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { CartComponent } from './cart/cart.component';
     HeaderComponent,
     FooterComponent,
     routingcomponents,
-    CartComponent
+    CartComponent,
+    CarHomeComponent
   ],
   imports: [
     BrowserModule,
