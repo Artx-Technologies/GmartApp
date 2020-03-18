@@ -87,3 +87,44 @@ border-radius: 8px;
 .at_ArroeIconselected{
     color: rgba(40, 133, 60, 0.8) !important;
 }
+
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.card-img-top{
+  width: 100px;
+  height: 80px;
+  align-self: center;
+  border-radius: 20px;
+}
+.content{
+  align-items: center;
+}
+.tab-pane{
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 800px;
+}
+.view{
+  color: white;
+  position: absolute;
+  right: 0px;
+  bottom: 158px;
+  background: #378F4A;
+  border-radius: 50% !important;
+  background-color: white;
+}
+.card{
+  border-radius: 8%;
+}
+.margin{
+margin: 15px;
+}
+
+
+
