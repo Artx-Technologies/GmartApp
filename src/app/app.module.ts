@@ -44,8 +44,7 @@ import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { AgmCoreModule } from "@agm/core";
-import { CartComponent } from './cart/cart.component';
-import { KkComponent } from './kk/kk.component';
+import { CartComponent } from "./cart/cart.component";
 
 @NgModule({
   declarations: [
@@ -58,8 +57,7 @@ import { KkComponent } from './kk/kk.component';
     HeaderComponent,
     FooterComponent,
     routingcomponents,
-    CartComponent,
-    KkComponent
+    CartComponent
   ],
   imports: [
     BrowserModule,
