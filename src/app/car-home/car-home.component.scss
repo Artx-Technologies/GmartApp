@@ -1,55 +1,66 @@
 .at_imgText1 {
-  background-image: url("../../assets/carhlanding1.svg");
-  background-size: contain;
+  background-image: url(../../assets/houserbg.svg);
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 77%;
+  background-position: center;
+  background-size: contain;
+  min-width: 600px;
   width: 100%;
+  height: auto;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 
+  .at_imgText1_humanplusbtn {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-self: center;
+    padding-left: 111px;
+    .at_imgText1Buttonandtext {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 33px;
+        line-height: 36px;
+        color: #062A78;
+      }
 
-  p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 59px;
-    color: #062A78;
-    text-align: left;
-    padding-left: 144px;
-    padding-top: 73px;
+      button {
+        background: #5E1C57;
+        box-shadow: 4px 2px 5px rgba(85, 85, 85, 0.25);
+        border-radius: 8px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 37px;
+        width: 340px;
+        height: 82px;
+        color: #FFFFFF;
+      }
+    }
 
-    button {
-      background: #5E1C57;
-      box-shadow: 4px 2px 5px rgba(85, 85, 85, 0.25);
-      border-radius: 8px;
-      border: none;
-      width: 190px;
-      height: 50px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 19px !important;
-      line-height: 37px !important;
+    .at_imgText1humanimg {
+      padding-top: 200px;
+    }
+  }
 
-      color: #FFFFFF;
+  .at_imgText1_carasimg {
+    display: flex;
+    padding-top: 200px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: center;
+
+    img {
+      align-self: end;
     }
   }
 }
-.at_imgText2{
-  background-image: url("../../assets/carhlanding2.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.at_imgText3{
-  margin: 15px;
-  background-image: url("../../assets/carhlanding3.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
-
