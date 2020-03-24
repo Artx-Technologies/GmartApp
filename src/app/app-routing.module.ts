@@ -4,13 +4,15 @@ import { ContactusComponent } from "./contactus-component/contactus-component.co
 import { HomeComponent } from "./home-component/home-component.component";
 import { ProductsComponentComponent } from "./products-component/products-component.component";
 import { CarHomeComponent } from './car-home/car-home.component';
+import { RenterDashboardComponent } from './renter-dashboard/renter-dashboard.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "home", component: HomeComponent },
   { path: "products", component: ProductsComponentComponent },
   { path: "contactus", component: ContactusComponent },
-  {path: "carh", component: CarHomeComponent}
+  {path: "carh", component: CarHomeComponent},
+  {path: "rd", component: RenterDashboardComponent }
 ];
 
 @NgModule({

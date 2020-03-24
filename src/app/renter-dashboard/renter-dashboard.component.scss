@@ -1,0 +1,101 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "https://fonts.googleapis.com/css?family=Bangers";
+
+.navbar {
+  background: #004D95;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
+}
+
+.at_cmp_logo {
+  font-family: Bangers;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 57px;
+  color: #000000;
+}
+
+.at_userId {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #99999B;
+}
+
+.at_usercls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+
+  .at_userName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FFFFFF;
+    align-self: center;
+  }
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 190px;
+  justify-content: center;
+  align-self: flex-start;
+  height: 126px;
+  z-index: 1;
+  margin-right: 0;
+  margin-top: 3em;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  flex-direction: column;
+
+  ul {
+    vertical-align: middle;
+    list-style-type: none;
+    li {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+
+    }
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.at_nav_welcome_txt{
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 33px;
+color: #FFFFFF !important;
+}
+.at_dash_table{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  .table_head{
+    border-bottom: solid 1px white;
+}
+}

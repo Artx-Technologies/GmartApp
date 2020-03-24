@@ -46,6 +46,7 @@ import { MatPaginatorModule } from "@angular/material/paginator";
 import { AgmCoreModule } from "@agm/core";
 import { CartComponent } from './cart/cart.component';
 import { CarHomeComponent } from './car-home/car-home.component';
+import { RenterDashboardComponent } from './renter-dashboard/renter-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { CarHomeComponent } from './car-home/car-home.component';
     FooterComponent,
     routingcomponents,
     CartComponent,
-    CarHomeComponent
+    CarHomeComponent,
+    RenterDashboardComponent
   ],
   imports: [
     BrowserModule,
