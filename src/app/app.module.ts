@@ -5,7 +5,6 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule, routingcomponents } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-
 import { HomeComponent } from "./home-component/home-component.component";
 import { ProductsComponentComponent } from "./products-component/products-component.component";
 import { ContactusComponent } from "./contactus-component/contactus-component.component";
@@ -46,6 +45,7 @@ import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { AgmCoreModule } from "@agm/core";
 import { CartComponent } from './cart/cart.component';
+import { CarHomeComponent } from './car-home/car-home.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +58,8 @@ import { CartComponent } from './cart/cart.component';
     HeaderComponent,
     FooterComponent,
     routingcomponents,
-    CartComponent
+    CartComponent,
+    CarHomeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,9 +6,18 @@
     <a href="#" class="at_CmpName">G-Mart</a>
   </div>
   <div class="at_rightContentNAv">
-<!-- Helllo -->
-    <a (click)="goHome()"  >Home<hr [ngClass]="HomeClassH ?'':'at_hide'"></a>
-    <a (click)="goProducts()"  >Products<hr [ngClass]="ProductClassH ?'':'at_hide'"></a>
-    <a (click)="goContacts()">Contact<hr [ngClass]="ContactClassH ?'':'at_hide'"></a>
+    <!-- Helllo -->
+    <a (click)="goHome()"
+      >Home
+      <hr [ngClass]="HomeClassH ? '' : 'at_hide'"
+    /></a>
+    <a (click)="goProducts()"
+      >Products
+      <hr [ngClass]="ProductClassH ? '' : 'at_hide'"
+    /></a>
+    <a (click)="goContacts()"
+      >Contact
+      <hr [ngClass]="ContactClassH ? '' : 'at_hide'"
+    /></a>
   </div>
 </mat-toolbar>
