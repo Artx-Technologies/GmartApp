@@ -30,11 +30,14 @@
 .fstnav,
 mat-toolbar {
   background: #004D95;
-
+  width:100%;
 }
 
 mat-toolbar {
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   h1 {
     font-family: Roboto;
@@ -46,10 +49,9 @@ mat-toolbar {
   }
 
   .userdatatbl {
-    width: 76%;
-    overflow: -moz-hidden-unscrollable;
-    overflow: hidden;
-    margin-left: 9em;
+    width: 50em;
+    overflow-x: -moz-hidden-unscrollable;
+    overflow-x: scroll;
   }
 
   table {
@@ -68,11 +70,7 @@ mat-toolbar {
       color: #99999B;
     }
 
-    th,
-    td {
-      padding-right: 7em;
-      width: 100%;
-    }
+
 
     td {
       text-align: center;
