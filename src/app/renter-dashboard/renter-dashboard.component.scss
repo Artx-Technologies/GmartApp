@@ -50,8 +50,8 @@ mat-toolbar {
 
   .userdatatbl {
     width: 50em;
-    overflow-x: -moz-hidden-unscrollable;
-    overflow-x: scroll;
+    overflow-x: auto;
+    scrollbar-width: thin;
   }
 
   table {
