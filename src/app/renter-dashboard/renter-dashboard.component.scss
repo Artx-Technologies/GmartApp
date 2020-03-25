@@ -1,10 +1,11 @@
 @import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "https://fonts.googleapis.com/css?family=Bangers";
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 .fstnav,
 mat-toolbar {
   background: #004D95;
-  width:100%;
+  width: 100%;
 }
 
 mat-toolbar {
@@ -153,5 +154,48 @@ mat-toolbar {
 
   .table_head {
     border-bottom: solid 1px white;
+  }
+}
+
+.at_dashDetails {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+  .at_nav_displayKeys {
+    background: #E2ECFF;
+    height: 100%;
+    width: 17em;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    background: #5991C6;
+    border-radius: 6px;
+  }
+
+  a {
+    
+    text-decoration: none;
+   h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px !important;
+    line-height: 33px;
+    color: #000000;
+   }
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    border-bottom: 1px solid #CDCDCD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

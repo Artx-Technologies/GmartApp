@@ -60,3 +60,20 @@
     </table>
   </span>
 </mat-toolbar>
+<div class="at_dashDetails">
+<div class="nav flex-column nav-pills at_nav_displayKeys"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <a class="nav-link active" (click)="whichoneclicked = 'Dashboard'"  id="v-pills-home-tab" data-toggle="pill" href="#v-pills-Dashboard" role="tab" aria-controls="v-pills-home" aria-selected="true"><h1>Dashboard</h1> <fa-icon *ngIf="whichoneclicked === 'Dashboard' " style="color: #004D95;"   [icon]="rightArrowFilled"  ></fa-icon></a>
+  <a class="nav-link" (click)="whichoneclicked = 'Manage'" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-Manage" role="tab" aria-controls="v-pills-profile" aria-selected="false"><h1>Manage Autos</h1><fa-icon *ngIf="whichoneclicked === 'Manage' " style="color: #004D95;"   [icon]="rightArrowFilled"  ></fa-icon></a>
+  <a class="nav-link" (click)="whichoneclicked = 'Recent'" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-Recent" role="tab" aria-controls="v-pills-messages" aria-selected="false"><h1>Recent Orders</h1><fa-icon *ngIf="whichoneclicked === 'Recent' " style="color: #004D95;"   [icon]="rightArrowFilled"  ></fa-icon></a>
+  <a class="nav-link" (click)="whichoneclicked = 'Earnings'" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-Earnings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><h1>Earnings</h1><fa-icon *ngIf="whichoneclicked === 'Earnings' " style=" color: #004D95;"   [icon]="rightArrowFilled"  ></fa-icon></a>
+  <a class="nav-link" (click)="whichoneclicked = 'fComplaint'" id="v-pills-fcomplaint-tab" data-toggle="pill" href="#v-pills-fcomplaint" role="tab" aria-controls="v-pills-settings" aria-selected="false"><h1>File a Complaint</h1><fa-icon *ngIf="whichoneclicked === 'fComplaint' " style=" color: #004D95;"   [icon]="rightArrowFilled"  ></fa-icon></a>
+
+</div>
+<div class="tab-content" id="v-pills-tabContent">
+  <div class="tab-pane fade show active" id="v-pills-Dashboard" role="tabpanel" aria-labelledby="v-pills-home-tab">Dashboard</div>
+  <div class="tab-pane fade" id="v-pills-Manage" role="tabpanel" aria-labelledby="v-pills-profile-tab">Manage Autos</div>
+  <div class="tab-pane fade" id="v-pills-Recent" role="tabpanel" aria-labelledby="v-pills-messages-tab">Recent Orders</div>
+  <div class="tab-pane fade" id="v-pills-Earnings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Earnings</div>
+  <div class="tab-pane fade" id="v-pills-fcomplaint" role="tabpanel" aria-labelledby="v-pills-fcomplaint-tab">File a Complaint</div>
+</div>
+</div>
